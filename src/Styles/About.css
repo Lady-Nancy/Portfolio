@@ -1,0 +1,224 @@
+.about {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 6%;
+    background-color: black;
+}
+
+.about h1 {
+    font-size: 3em;
+    padding-bottom: 1%;
+}
+
+.about h1, p {
+    margin-bottom: 2%;
+}
+
+.card {
+    display: flex;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #f0f0f0; 
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  width: 40%;
+}
+
+.card-container:hover {
+    scale: 0.9;
+    box-shadow: 0 10px 30px rgba(139,92,246,0.4);
+}
+
+.about img {
+    width: 25%;
+    margin-left: 18%;
+}
+
+.about img:hover {
+    scale: 0.9;
+    box-shadow: 0 8px 30px white;
+}
+
+.business-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.2 / 1; 
+  background-color: #e6e4dc; 
+  border-right: 1px solid #1a1a1a;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  border-radius: 40px; 
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin-left: -8%;
+}
+
+.business-card:hover {
+    scale: 0.9;
+    border-left: 1px solid #1a1a1a;
+    box-shadow: 0 8px 30px rgba(139,92,246,0.4);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-name {
+  font-family: "Playfair Display", "Georgia", serif; 
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.card-description {
+  font-size: 0.7em;
+  color: #1a1a1a;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0;
+}
+
+
+.icon-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.icon-circle {
+  width: 28px;
+  height: 28px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+.social-icon {
+  color: #8b5cf6;     
+  font-size: 14px;    
+  stroke-width: 2px;   
+}
+
+
+.icon-circle:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+
+.star {
+  position: absolute;
+  color: #000000;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.top-left-star {
+  top: 24px;
+  left: 24px;
+}
+
+.bottom-right-star {
+  bottom: 24px;
+  right: 24px;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+    margin-top: 3%;
+    }
+
+   .about img {
+    margin-left: 3%;
+    width: 40%;
+  }
+
+
+  .card-container {
+    min-height: 80vh;
+    width: 60%;
+    margin-right: 4%;
+  }
+
+  .business-card {
+  width: 100%;
+  padding: 30px;
+  margin-left: -14%;
+}
+
+.card h1 {
+    font-size: 1.5em;
+    margin-bottom: 0%;
+    margin-top: 4%;
+}
+
+.card-description {
+  font-size: 0.6em;
+  max-width: 90%;
+}
+
+.icon-circle {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6%;
+}
+
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-container {
+    min-height: 60vh;
+    width: 90%;
+    margin-left: 4%;
+  }
+
+  .about img {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5%;
+    height: 60vh;
+  }
+
+  .business-card {
+  width: 100%;
+  padding: 40px;
+  margin-left: 0%;
+}
+
+.card-description {
+  font-size: 0.7em;
+}
+
+.card h1 {
+    font-size: 2em;
+    margin-bottom: 0%;
+}
+
+}
