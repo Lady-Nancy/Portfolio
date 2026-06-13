@@ -64,7 +64,7 @@ const Footer = () => {
           <div className="footer-column footer-form">
             <h3>Stay Updated</h3>
             <p>Get the latest technical insights and project drops sent to your inbox.</p>
-            <form onSubmit={handleSubscribe}>
+            <form action="https://formspree.io/f/mbdepbbv" method="POST" onSubmit={handleSubscribe}>
               <div className="form-group">
                 <input 
                   type="email" 

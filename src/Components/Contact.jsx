@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-form-panel">
-          <form className="interactive-form" action="#" method="POST">
+          <form className="interactive-form" action="https://formspree.io/f/mbdepbbv" method="POST">
             
             <div className="input-group">
               <input type="text" id="name" name="name" required placeholder=" " />
