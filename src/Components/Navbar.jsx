@@ -1,9 +1,8 @@
-import { useState } from "react" 
-import { Link } from "react-router-dom"
-import "../Styles/Navbar.css"
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../Styles/Navbar.css";
 
 const Navbar = () => {
-  // 2. Create the state to track if menu is open
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,28 +10,33 @@ const Navbar = () => {
   };
 
   return (
-    <div className="nav-links">
-      <h3>Nancy.dev</h3>
-      
-      <div className={`link1 ${isOpen ? "active" : ""}`} >
-        <Link to="/" className="link" onClick={toggleMenu}>Home</Link>
-        <Link to="/about" className="link" onClick={toggleMenu}>About</Link>
-        <Link to="/skills" className="link" onClick={toggleMenu}>Skills</Link>
-        <Link to="/projects" className="link" onClick={toggleMenu}>Projects</Link>
-        <Link to="/contact" className="link link2" onClick={toggleMenu}>Contact</Link>
+    <nav className="nav-container">
+      {/* The Main Visible Header Bar */}
+      <div className="nav-header-bar">
+        <h3 className="nav-logo">Nancy.dev</h3>
+
+        {/* Hamburger Trigger */}
+        <button 
+          className={`hamburger ${isOpen ? "is-active" : ""}`} 
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <button 
-        className={`hamburger ${isOpen ? "is-active" : ""}`} 
-        onClick={toggleMenu}
-        aria-label="Toggle navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  )
-}
+      {/* The Navigation Links Menu (Slides in on Mobile, static on Desktop) */}
+      <div className={`nav-links-wrapper ${isOpen ? "active" : ""}`}>
+        <Link to="/" className="nav-link" onClick={toggleMenu}>Home</Link>
+        <Link to="/about" className="nav-link" onClick={toggleMenu}>About</Link>
+        <Link to="/skills" className="nav-link" onClick={toggleMenu}>Skills</Link>
+        <Link to="/projects" className="nav-link" onClick={toggleMenu}>Projects</Link>
+        <Link to="/contact" className="nav-link nav-btn" onClick={toggleMenu}>Contact</Link>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
