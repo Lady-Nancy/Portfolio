@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="nav-links">
       <h3>Nancy.dev</h3>
       
-      <div className={`link1 ${isOpen ? "active" : ""}`}>
+      <div className={`link1 ${isOpen ? "active" : ""}`} >
         <Link to="/" className="link" onClick={toggleMenu}>Home</Link>
         <Link to="/about" className="link" onClick={toggleMenu}>About</Link>
         <Link to="/skills" className="link" onClick={toggleMenu}>Skills</Link>
