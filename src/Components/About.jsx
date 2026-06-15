@@ -30,7 +30,7 @@ const About = () => {
             <a href="https://x.com/Anselm_Nancy" target="_blank" rel="noreferrer" className="icon-circle">
               <FiTwitter className="social-icon" />
             </a>
-            <a href="ansemnancy28@gmail.com" className="icon-circle">
+            <a href="/contact" className="icon-circle">
               <FiMail className="social-icon" />
             </a>
             <a href="https://www.instagram.com/anselmnancy1?igsh=ZW92d3QxYjRvdWdq" target="_blank" rel="noreferrer" className="icon-circle">
