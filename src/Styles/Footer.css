@@ -89,7 +89,9 @@
   margin: 0;
 }
 
-.footer-links li {
+.footer-links {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 0.75rem;
 }
 

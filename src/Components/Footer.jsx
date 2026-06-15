@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaArrowUp, FaCode, FaShieldAlt 
 } from 'react-icons/fa'; 
 import '../Styles/Footer.css';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -39,10 +40,11 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Navigation</h3>
             <ul className="footer-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/contact">Contact</a></li>
+            <Link to="/" >Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
             </ul>
           </div>
 
